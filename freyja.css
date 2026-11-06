@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+TZ:wght@400&family=Pinyon+Script&display=swap');
+.cia-freyja{--ouro:#d9b77b;--vinho:#5b2637;--texto:#d9cfc4;--fala:#edbf76;--pensamento:#c29cac;position:relative;isolation:isolate;box-sizing:border-box;max-width:620px;margin:30px auto;background:#100d10;border:1px solid #77552f;box-shadow:0 8px 35px #0006;color:var(--texto);font:16px/1.95 Georgia,serif;overflow:hidden}
+.cia-freyja *{box-sizing:border-box}
+.cia-freyja header{position:relative;z-index:2;text-align:center;padding:56px 12% 28px}
+.cia-freyja h2{color:var(--ouro);font-size:30px;font-weight:normal;letter-spacing:2px;line-height:1.35;margin:0;overflow-wrap:anywhere}
+.cia-freyja header p{font-size:15px;font-style:italic;color:#bca99c;line-height:1.8;margin:15px 0 0}
+.cia-freyja header:after{content:'';display:block;width:75px;height:1px;background:var(--ouro);opacity:.5;margin:25px auto 0}
+.cia-freyja .cia-narrativa{position:relative;z-index:2;padding:0 13% 25px;overflow-wrap:anywhere}
+.cia-narrativa p{margin:0 0 20px}
+.cia-narrativa .cia-fala{color:var(--fala)}
+.cia-narrativa .cia-pensamento{color:var(--pensamento);font-style:italic}
+.cia-freyja .cia-runas{position:absolute;inset:0;pointer-events:none;z-index:1}
+.cia-runas i{position:absolute;width:43px;height:80px;background-image:url('https://i.imgur.com/vSoRQc3.png');background-size:500% 100%;mix-blend-mode:screen;animation:cia-runa 5s ease-in-out infinite alternate}
+.cia-runas i:nth-child(odd){left:2px}
+.cia-runas i:nth-child(even){right:2px}
+.cia-runas i:nth-child(1){top:30px}
+.cia-runas i:nth-child(2){top:14%;background-position:25% 0;animation-delay:-2s}
+.cia-runas i:nth-child(3){top:39%;background-position:50% 0;animation-delay:-4s}
+.cia-runas i:nth-child(4){top:57%;background-position:75% 0;animation-delay:-1s}
+.cia-runas i:nth-child(5){bottom:12%;background-position:100% 0;animation-delay:-3s}
+.cia-runas i:nth-child(6){bottom:15px;background-position:0 0;animation-delay:-5s}
+@keyframes cia-runa{from{opacity:.22;filter:brightness(.65)}to{opacity:.95;filter:brightness(1.25)}}
+.cia-freyja .cia-creditos{display:block;position:relative;z-index:2;text-align:center;color:var(--ouro);font:10px/1.4 Georgia,serif;letter-spacing:3px;padding:0 0 18px;opacity:.65}
+@media(max-width:450px){.cia-freyja header{padding-top:40px}
+.cia-freyja h2{font-size:26px}
+.cia-freyja .cia-narrativa{font-size:15px}
+.cia-runas i{width:31px;height:65px}
+}
+@media(prefers-reduced-motion:reduce){.cia-runas i{animation:none;opacity:.5}
+}
+.cia-freyja .cia-runas{mix-blend-mode:screen;filter:contrast(1.25);background:transparent}
+.cia-freyja .cia-runas{inset:0;z-index:1;overflow:hidden}
+.cia-freyja .cia-runas i{left:0!important;right:auto!important;top:0!important;bottom:auto!important;width:36px;height:64px;offset-path:inset(17px round 10px);offset-anchor:center;offset-rotate:0deg;animation:cia-percurso 58s linear infinite,cia-brilho 6s ease-in-out infinite alternate;opacity:.65}
+@keyframes cia-percurso{from{offset-distance:0%}to{offset-distance:100%}}
+@keyframes cia-brilho{from{opacity:.2}to{opacity:.85}}
+.cia-freyja .cia-runas i:nth-child(1){background-position:0% 0;animation-delay:-0s,-0.87s}
+.cia-freyja .cia-runas i:nth-child(2){background-position:25% 0;animation-delay:-4.142857142857143s,-1.74s}
+.cia-freyja .cia-runas i:nth-child(3){background-position:50% 0;animation-delay:-8.285714285714286s,-2.61s}
+.cia-freyja .cia-runas i:nth-child(4){background-position:75% 0;animation-delay:-12.428571428571429s,-3.48s}
+.cia-freyja .cia-runas i:nth-child(5){background-position:100% 0;animation-delay:-16.571428571428573s,-4.35s}
+.cia-freyja .cia-runas i:nth-child(6){background-position:0% 0;animation-delay:-20.714285714285715s,-5.22s}
+.cia-freyja .cia-runas i:nth-child(7){background-position:25% 0;animation-delay:-24.857142857142858s,-6.09s}
+.cia-freyja .cia-runas i:nth-child(8){background-position:50% 0;animation-delay:-29s,-6.96s}
+.cia-freyja .cia-runas i:nth-child(9){background-position:75% 0;animation-delay:-33.142857142857146s,-7.83s}
+.cia-freyja .cia-runas i:nth-child(10){background-position:100% 0;animation-delay:-37.285714285714285s,-8.7s}
+.cia-freyja .cia-runas i:nth-child(11){background-position:0% 0;animation-delay:-41.42857142857143s,-9.57s}
+.cia-freyja .cia-runas i:nth-child(12){background-position:25% 0;animation-delay:-45.57142857142857s,-10.44s}
+.cia-freyja .cia-runas i:nth-child(13){background-position:50% 0;animation-delay:-49.714285714285715s,-11.31s}
+.cia-freyja .cia-runas i:nth-child(14){background-position:75% 0;animation-delay:-53.857142857142854s,-12.18s}
+@media(max-width:450px){.cia-freyja .cia-runas i{width:25px;height:50px;offset-path:inset(12px round 8px)}
+}
+@media(prefers-reduced-motion:reduce){.cia-freyja .cia-runas i{animation:none;offset-distance:var(--pos);opacity:.35}
+}
+.cia-freyja .cia-runas i{offset-path:none!important;offset-distance:0%!important;offset-anchor:auto;position:absolute;width:27px;height:49px;animation:cia-escrita 22s linear infinite;opacity:0;top:0!important;transform:translateY(0)}
+@keyframes cia-escrita{0%{opacity:0;transform:translate(0,50px)}15%{opacity:.55}50%{opacity:.7}85%{opacity:.4}100%{opacity:0;transform:translate(5px,-70px)}}
+.cia-freyja .cia-runas i:nth-child(1){left:auto!important;right:auto!important;left:1px!important;top:8%!important;background-position:0% 0;animation-duration:18s;animation-delay:-0s;animation-direction:reverse;}
+.cia-freyja .cia-runas i:nth-child(2){left:auto!important;right:auto!important;right:1px!important;top:8%!important;background-position:25% 0;animation-duration:20s;animation-delay:-2.713s;}
+.cia-freyja .cia-runas i:nth-child(3){left:auto!important;right:auto!important;left:24px!important;top:8%!important;background-position:50% 0;animation-duration:22s;animation-delay:-5.426s;}
+.cia-freyja .cia-runas i:nth-child(4){left:auto!important;right:auto!important;right:24px!important;top:8%!important;background-position:75% 0;animation-duration:24s;animation-delay:-8.139s;animation-direction:reverse;}
+.cia-freyja .cia-runas i:nth-child(5){left:auto!important;right:auto!important;left:1px!important;top:19%!important;background-position:100% 0;animation-duration:26s;animation-delay:-10.852s;}
+.cia-freyja .cia-runas i:nth-child(6){left:auto!important;right:auto!important;right:1px!important;top:19%!important;background-position:0% 0;animation-duration:28s;animation-delay:-13.565000000000001s;}
+.cia-freyja .cia-runas i:nth-child(7){left:auto!important;right:auto!important;left:24px!important;top:19%!important;background-position:25% 0;animation-duration:18s;animation-delay:-16.278s;animation-direction:reverse;}
+.cia-freyja .cia-runas i:nth-child(8){left:auto!important;right:auto!important;right:24px!important;top:19%!important;background-position:50% 0;animation-duration:20s;animation-delay:-18.991s;}
+.cia-freyja .cia-runas i:nth-child(9){left:auto!important;right:auto!important;left:1px!important;top:30%!important;background-position:75% 0;animation-duration:22s;animation-delay:-21.704s;}
+.cia-freyja .cia-runas i:nth-child(10){left:auto!important;right:auto!important;right:1px!important;top:30%!important;background-position:100% 0;animation-duration:24s;animation-delay:-24.417s;animation-direction:reverse;}
+.cia-freyja .cia-runas i:nth-child(11){left:auto!important;right:auto!important;left:24px!important;top:30%!important;background-position:0% 0;animation-duration:26s;animation-delay:-27.130000000000003s;}
+.cia-freyja .cia-runas i:nth-child(12){left:auto!important;right:auto!important;right:24px!important;top:30%!important;background-position:25% 0;animation-duration:28s;animation-delay:-29.843s;}
+.cia-freyja .cia-runas i:nth-child(13){left:auto!important;right:auto!important;left:1px!important;top:41%!important;background-position:50% 0;animation-duration:18s;animation-delay:-32.556s;animation-direction:reverse;}
+.cia-freyja .cia-runas i:nth-child(14){left:auto!important;right:auto!important;right:1px!important;top:41%!important;background-position:75% 0;animation-duration:20s;animation-delay:-35.269s;}
+.cia-freyja .cia-runas i:nth-child(15){left:auto!important;right:auto!important;left:24px!important;top:41%!important;background-position:100% 0;animation-duration:22s;animation-delay:-37.982s;}
+.cia-freyja .cia-runas i:nth-child(16){left:auto!important;right:auto!important;right:24px!important;top:41%!important;background-position:0% 0;animation-duration:24s;animation-delay:-40.695s;animation-direction:reverse;}
+.cia-freyja .cia-runas i:nth-child(17){left:auto!important;right:auto!important;left:1px!important;top:52%!important;background-position:25% 0;animation-duration:26s;animation-delay:-43.408s;}
+.cia-freyja .cia-runas i:nth-child(18){left:auto!important;right:auto!important;right:1px!important;top:52%!important;background-position:50% 0;animation-duration:28s;animation-delay:-46.121s;}
+.cia-freyja .cia-runas i:nth-child(19){left:auto!important;right:auto!important;left:24px!important;top:52%!important;background-position:75% 0;animation-duration:18s;animation-delay:-48.834s;animation-direction:reverse;}
+.cia-freyja .cia-runas i:nth-child(20){left:auto!important;right:auto!important;right:24px!important;top:52%!important;background-position:100% 0;animation-duration:20s;animation-delay:-51.547000000000004s;}
+.cia-freyja .cia-runas i:nth-child(21){left:auto!important;right:auto!important;left:1px!important;top:63%!important;background-position:0% 0;animation-duration:22s;animation-delay:-54.260000000000005s;}
+.cia-freyja .cia-runas i:nth-child(22){left:auto!important;right:auto!important;right:1px!important;top:63%!important;background-position:25% 0;animation-duration:24s;animation-delay:-56.973s;animation-direction:reverse;}
+.cia-freyja .cia-runas i:nth-child(23){left:auto!important;right:auto!important;left:24px!important;top:63%!important;background-position:50% 0;animation-duration:26s;animation-delay:-59.686s;}
+.cia-freyja .cia-runas i:nth-child(24){left:auto!important;right:auto!important;right:24px!important;top:63%!important;background-position:75% 0;animation-duration:28s;animation-delay:-62.399s;}
+.cia-freyja .cia-runas i:nth-child(25){left:auto!important;right:auto!important;left:1px!important;top:74%!important;background-position:100% 0;animation-duration:18s;animation-delay:-65.112s;animation-direction:reverse;}
+.cia-freyja .cia-runas i:nth-child(26){left:auto!important;right:auto!important;right:1px!important;top:74%!important;background-position:0% 0;animation-duration:20s;animation-delay:-67.825s;}
+.cia-freyja .cia-runas i:nth-child(27){left:auto!important;right:auto!important;left:24px!important;top:74%!important;background-position:25% 0;animation-duration:22s;animation-delay:-70.538s;}
+.cia-freyja .cia-runas i:nth-child(28){left:auto!important;right:auto!important;right:24px!important;top:74%!important;background-position:50% 0;animation-duration:24s;animation-delay:-73.251s;animation-direction:reverse;}
+.cia-freyja .cia-runas i:nth-child(29){left:auto!important;right:auto!important;left:1px!important;top:85%!important;background-position:75% 0;animation-duration:26s;animation-delay:-75.964s;}
+.cia-freyja .cia-runas i:nth-child(30){left:auto!important;right:auto!important;right:1px!important;top:85%!important;background-position:100% 0;animation-duration:28s;animation-delay:-78.677s;}
+.cia-freyja .cia-runas i:nth-child(31){left:auto!important;right:auto!important;left:24px!important;top:85%!important;background-position:0% 0;animation-duration:18s;animation-delay:-81.39s;animation-direction:reverse;}
+.cia-freyja .cia-runas i:nth-child(32){left:auto!important;right:auto!important;right:24px!important;top:85%!important;background-position:25% 0;animation-duration:20s;animation-delay:-84.10300000000001s;}
+.cia-freyja .cia-runas{filter:contrast(1.25)}
+@media(max-width:450px){.cia-freyja .cia-runas i{width:19px;height:36px}
+.cia-freyja .cia-narrativa{padding-left:15%;padding-right:15%}
+}
+@media(prefers-reduced-motion:reduce){.cia-freyja .cia-runas i{animation:none;opacity:.25;transform:none}
+}
+.cia-freyja .cia-runas i:nth-child(1){left:auto!important;right:auto!important;left:1px!important;top:5%!important;background-position:0% 0;animation-duration:18s;animation-delay:-0s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(2){left:auto!important;right:auto!important;right:1px!important;top:5%!important;background-position:25% 0;animation-duration:20s;animation-delay:-2.713s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(3){left:auto!important;right:auto!important;left:25px!important;top:5%!important;background-position:50% 0;animation-duration:22s;animation-delay:-5.426s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(4){left:auto!important;right:auto!important;right:25px!important;top:5%!important;background-position:75% 0;animation-duration:24s;animation-delay:-8.139s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(5){left:auto!important;right:auto!important;left:1px!important;top:11.6%!important;background-position:100% 0;animation-duration:26s;animation-delay:-10.852s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(6){left:auto!important;right:auto!important;right:1px!important;top:11.6%!important;background-position:0% 0;animation-duration:28s;animation-delay:-13.565000000000001s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(7){left:auto!important;right:auto!important;left:25px!important;top:11.6%!important;background-position:25% 0;animation-duration:18s;animation-delay:-16.278s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(8){left:auto!important;right:auto!important;right:25px!important;top:11.6%!important;background-position:50% 0;animation-duration:20s;animation-delay:-18.991s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(9){left:auto!important;right:auto!important;left:1px!important;top:18.2%!important;background-position:75% 0;animation-duration:22s;animation-delay:-21.704s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(10){left:auto!important;right:auto!important;right:1px!important;top:18.2%!important;background-position:100% 0;animation-duration:24s;animation-delay:-24.417s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(11){left:auto!important;right:auto!important;left:25px!important;top:18.2%!important;background-position:0% 0;animation-duration:26s;animation-delay:-27.130000000000003s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(12){left:auto!important;right:auto!important;right:25px!important;top:18.2%!important;background-position:25% 0;animation-duration:28s;animation-delay:-29.843s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(13){left:auto!important;right:auto!important;left:1px!important;top:24.799999999999997%!important;background-position:50% 0;animation-duration:18s;animation-delay:-32.556s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(14){left:auto!important;right:auto!important;right:1px!important;top:24.799999999999997%!important;background-position:75% 0;animation-duration:20s;animation-delay:-35.269s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(15){left:auto!important;right:auto!important;left:25px!important;top:24.799999999999997%!important;background-position:100% 0;animation-duration:22s;animation-delay:-37.982s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(16){left:auto!important;right:auto!important;right:25px!important;top:24.799999999999997%!important;background-position:0% 0;animation-duration:24s;animation-delay:-40.695s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(17){left:auto!important;right:auto!important;left:1px!important;top:31.4%!important;background-position:25% 0;animation-duration:26s;animation-delay:-43.408s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(18){left:auto!important;right:auto!important;right:1px!important;top:31.4%!important;background-position:50% 0;animation-duration:28s;animation-delay:-46.121s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(19){left:auto!important;right:auto!important;left:25px!important;top:31.4%!important;background-position:75% 0;animation-duration:18s;animation-delay:-48.834s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(20){left:auto!important;right:auto!important;right:25px!important;top:31.4%!important;background-position:100% 0;animation-duration:20s;animation-delay:-51.547000000000004s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(21){left:auto!important;right:auto!important;left:1px!important;top:38%!important;background-position:0% 0;animation-duration:22s;animation-delay:-54.260000000000005s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(22){left:auto!important;right:auto!important;right:1px!important;top:38%!important;background-position:25% 0;animation-duration:24s;animation-delay:-56.973s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(23){left:auto!important;right:auto!important;left:25px!important;top:38%!important;background-position:50% 0;animation-duration:26s;animation-delay:-59.686s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(24){left:auto!important;right:auto!important;right:25px!important;top:38%!important;background-position:75% 0;animation-duration:28s;animation-delay:-62.399s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(25){left:auto!important;right:auto!important;left:1px!important;top:44.599999999999994%!important;background-position:100% 0;animation-duration:18s;animation-delay:-65.112s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(26){left:auto!important;right:auto!important;right:1px!important;top:44.599999999999994%!important;background-position:0% 0;animation-duration:20s;animation-delay:-67.825s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(27){left:auto!important;right:auto!important;left:25px!important;top:44.599999999999994%!important;background-position:25% 0;animation-duration:22s;animation-delay:-70.538s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(28){left:auto!important;right:auto!important;right:25px!important;top:44.599999999999994%!important;background-position:50% 0;animation-duration:24s;animation-delay:-73.251s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(29){left:auto!important;right:auto!important;left:1px!important;top:51.199999999999996%!important;background-position:75% 0;animation-duration:26s;animation-delay:-75.964s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(30){left:auto!important;right:auto!important;right:1px!important;top:51.199999999999996%!important;background-position:100% 0;animation-duration:28s;animation-delay:-78.677s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(31){left:auto!important;right:auto!important;left:25px!important;top:51.199999999999996%!important;background-position:0% 0;animation-duration:18s;animation-delay:-81.39s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(32){left:auto!important;right:auto!important;right:25px!important;top:51.199999999999996%!important;background-position:25% 0;animation-duration:20s;animation-delay:-84.10300000000001s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(33){left:auto!important;right:auto!important;left:1px!important;top:57.8%!important;background-position:50% 0;animation-duration:22s;animation-delay:-86.816s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(34){left:auto!important;right:auto!important;right:1px!important;top:57.8%!important;background-position:75% 0;animation-duration:24s;animation-delay:-89.529s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(35){left:auto!important;right:auto!important;left:25px!important;top:57.8%!important;background-position:100% 0;animation-duration:26s;animation-delay:-92.242s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(36){left:auto!important;right:auto!important;right:25px!important;top:57.8%!important;background-position:0% 0;animation-duration:28s;animation-delay:-94.955s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(37){left:auto!important;right:auto!important;left:1px!important;top:64.4%!important;background-position:25% 0;animation-duration:18s;animation-delay:-97.668s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(38){left:auto!important;right:auto!important;right:1px!important;top:64.4%!important;background-position:50% 0;animation-duration:20s;animation-delay:-100.381s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(39){left:auto!important;right:auto!important;left:25px!important;top:64.4%!important;background-position:75% 0;animation-duration:22s;animation-delay:-103.09400000000001s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(40){left:auto!important;right:auto!important;right:25px!important;top:64.4%!important;background-position:100% 0;animation-duration:24s;animation-delay:-105.807s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(41){left:auto!important;right:auto!important;left:1px!important;top:71%!important;background-position:0% 0;animation-duration:26s;animation-delay:-108.52000000000001s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(42){left:auto!important;right:auto!important;right:1px!important;top:71%!important;background-position:25% 0;animation-duration:28s;animation-delay:-111.233s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(43){left:auto!important;right:auto!important;left:25px!important;top:71%!important;background-position:50% 0;animation-duration:18s;animation-delay:-113.946s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(44){left:auto!important;right:auto!important;right:25px!important;top:71%!important;background-position:75% 0;animation-duration:20s;animation-delay:-116.659s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(45){left:auto!important;right:auto!important;left:1px!important;top:77.6%!important;background-position:100% 0;animation-duration:22s;animation-delay:-119.372s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(46){left:auto!important;right:auto!important;right:1px!important;top:77.6%!important;background-position:0% 0;animation-duration:24s;animation-delay:-122.08500000000001s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(47){left:auto!important;right:auto!important;left:25px!important;top:77.6%!important;background-position:25% 0;animation-duration:26s;animation-delay:-124.798s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(48){left:auto!important;right:auto!important;right:25px!important;top:77.6%!important;background-position:50% 0;animation-duration:28s;animation-delay:-127.51100000000001s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(49){left:auto!important;right:auto!important;left:1px!important;top:84.19999999999999%!important;background-position:75% 0;animation-duration:18s;animation-delay:-130.224s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(50){left:auto!important;right:auto!important;right:1px!important;top:84.19999999999999%!important;background-position:100% 0;animation-duration:20s;animation-delay:-132.937s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(51){left:auto!important;right:auto!important;left:25px!important;top:84.19999999999999%!important;background-position:0% 0;animation-duration:22s;animation-delay:-135.65s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(52){left:auto!important;right:auto!important;right:25px!important;top:84.19999999999999%!important;background-position:25% 0;animation-duration:24s;animation-delay:-138.363s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(53){left:auto!important;right:auto!important;left:1px!important;top:90.8%!important;background-position:50% 0;animation-duration:26s;animation-delay:-141.076s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(54){left:auto!important;right:auto!important;right:1px!important;top:90.8%!important;background-position:75% 0;animation-duration:28s;animation-delay:-143.78900000000002s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(55){left:auto!important;right:auto!important;left:25px!important;top:90.8%!important;background-position:100% 0;animation-duration:18s;animation-delay:-146.502s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(56){left:auto!important;right:auto!important;right:25px!important;top:90.8%!important;background-position:0% 0;animation-duration:20s;animation-delay:-149.215s;animation-direction:normal}
+.cia-freyja header,.cia-freyja .cia-narrativa{background:radial-gradient(ellipse,#100d10d9 35%,#100d1077 75%,transparent);position:relative;z-index:2}
+.cia-freyja .cia-narrativa{padding-bottom:55px}
+.cia-freyja .cia-creditos{padding-top:12px}
+.cia-freyja .cia-runas{inset:0;z-index:0;mix-blend-mode:screen;pointer-events:none}
+.cia-freyja .cia-runas i{width:27px;height:49px;animation-name:cia-escrita;offset-path:none!important}
+.cia-freyja header,.cia-freyja .cia-narrativa{background:radial-gradient(ellipse,#100d10a8 15%,#100d1066 75%,transparent)}
+.cia-freyja .cia-runas i:nth-child(1){left:2%!important;right:auto!important;top:3%!important;background-position:0% 0;animation-duration:18s;animation-delay:-0s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(2){left:15.3%!important;right:auto!important;top:3%!important;background-position:25% 0;animation-duration:20s;animation-delay:-2.713s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(3){left:28.6%!important;right:auto!important;top:3%!important;background-position:50% 0;animation-duration:22s;animation-delay:-5.426s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(4){left:41.900000000000006%!important;right:auto!important;top:3%!important;background-position:75% 0;animation-duration:24s;animation-delay:-8.139s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(5){left:55.2%!important;right:auto!important;top:3%!important;background-position:100% 0;animation-duration:26s;animation-delay:-10.852s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(6){left:68.5%!important;right:auto!important;top:3%!important;background-position:0% 0;animation-duration:28s;animation-delay:-13.565000000000001s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(7){left:81.80000000000001%!important;right:auto!important;top:3%!important;background-position:25% 0;animation-duration:18s;animation-delay:-16.278s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(8){left:95.10000000000001%!important;right:auto!important;top:3%!important;background-position:50% 0;animation-duration:20s;animation-delay:-18.991s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(9){left:2%!important;right:auto!important;top:9.9%!important;background-position:75% 0;animation-duration:22s;animation-delay:-21.704s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(10){left:15.3%!important;right:auto!important;top:9.9%!important;background-position:100% 0;animation-duration:24s;animation-delay:-24.417s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(11){left:28.6%!important;right:auto!important;top:9.9%!important;background-position:0% 0;animation-duration:26s;animation-delay:-27.130000000000003s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(12){left:41.900000000000006%!important;right:auto!important;top:9.9%!important;background-position:25% 0;animation-duration:28s;animation-delay:-29.843s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(13){left:55.2%!important;right:auto!important;top:9.9%!important;background-position:50% 0;animation-duration:18s;animation-delay:-32.556s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(14){left:68.5%!important;right:auto!important;top:9.9%!important;background-position:75% 0;animation-duration:20s;animation-delay:-35.269s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(15){left:81.80000000000001%!important;right:auto!important;top:9.9%!important;background-position:100% 0;animation-duration:22s;animation-delay:-37.982s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(16){left:95.10000000000001%!important;right:auto!important;top:9.9%!important;background-position:0% 0;animation-duration:24s;animation-delay:-40.695s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(17){left:2%!important;right:auto!important;top:16.8%!important;background-position:25% 0;animation-duration:26s;animation-delay:-43.408s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(18){left:15.3%!important;right:auto!important;top:16.8%!important;background-position:50% 0;animation-duration:28s;animation-delay:-46.121s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(19){left:28.6%!important;right:auto!important;top:16.8%!important;background-position:75% 0;animation-duration:18s;animation-delay:-48.834s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(20){left:41.900000000000006%!important;right:auto!important;top:16.8%!important;background-position:100% 0;animation-duration:20s;animation-delay:-51.547000000000004s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(21){left:55.2%!important;right:auto!important;top:16.8%!important;background-position:0% 0;animation-duration:22s;animation-delay:-54.260000000000005s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(22){left:68.5%!important;right:auto!important;top:16.8%!important;background-position:25% 0;animation-duration:24s;animation-delay:-56.973s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(23){left:81.80000000000001%!important;right:auto!important;top:16.8%!important;background-position:50% 0;animation-duration:26s;animation-delay:-59.686s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(24){left:95.10000000000001%!important;right:auto!important;top:16.8%!important;background-position:75% 0;animation-duration:28s;animation-delay:-62.399s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(25){left:2%!important;right:auto!important;top:23.700000000000003%!important;background-position:100% 0;animation-duration:18s;animation-delay:-65.112s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(26){left:15.3%!important;right:auto!important;top:23.700000000000003%!important;background-position:0% 0;animation-duration:20s;animation-delay:-67.825s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(27){left:28.6%!important;right:auto!important;top:23.700000000000003%!important;background-position:25% 0;animation-duration:22s;animation-delay:-70.538s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(28){left:41.900000000000006%!important;right:auto!important;top:23.700000000000003%!important;background-position:50% 0;animation-duration:24s;animation-delay:-73.251s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(29){left:55.2%!important;right:auto!important;top:23.700000000000003%!important;background-position:75% 0;animation-duration:26s;animation-delay:-75.964s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(30){left:68.5%!important;right:auto!important;top:23.700000000000003%!important;background-position:100% 0;animation-duration:28s;animation-delay:-78.677s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(31){left:81.80000000000001%!important;right:auto!important;top:23.700000000000003%!important;background-position:0% 0;animation-duration:18s;animation-delay:-81.39s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(32){left:95.10000000000001%!important;right:auto!important;top:23.700000000000003%!important;background-position:25% 0;animation-duration:20s;animation-delay:-84.10300000000001s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(33){left:2%!important;right:auto!important;top:30.6%!important;background-position:50% 0;animation-duration:22s;animation-delay:-86.816s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(34){left:15.3%!important;right:auto!important;top:30.6%!important;background-position:75% 0;animation-duration:24s;animation-delay:-89.529s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(35){left:28.6%!important;right:auto!important;top:30.6%!important;background-position:100% 0;animation-duration:26s;animation-delay:-92.242s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(36){left:41.900000000000006%!important;right:auto!important;top:30.6%!important;background-position:0% 0;animation-duration:28s;animation-delay:-94.955s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(37){left:55.2%!important;right:auto!important;top:30.6%!important;background-position:25% 0;animation-duration:18s;animation-delay:-97.668s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(38){left:68.5%!important;right:auto!important;top:30.6%!important;background-position:50% 0;animation-duration:20s;animation-delay:-100.381s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(39){left:81.80000000000001%!important;right:auto!important;top:30.6%!important;background-position:75% 0;animation-duration:22s;animation-delay:-103.09400000000001s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(40){left:95.10000000000001%!important;right:auto!important;top:30.6%!important;background-position:100% 0;animation-duration:24s;animation-delay:-105.807s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(41){left:2%!important;right:auto!important;top:37.5%!important;background-position:0% 0;animation-duration:26s;animation-delay:-108.52000000000001s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(42){left:15.3%!important;right:auto!important;top:37.5%!important;background-position:25% 0;animation-duration:28s;animation-delay:-111.233s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(43){left:28.6%!important;right:auto!important;top:37.5%!important;background-position:50% 0;animation-duration:18s;animation-delay:-113.946s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(44){left:41.900000000000006%!important;right:auto!important;top:37.5%!important;background-position:75% 0;animation-duration:20s;animation-delay:-116.659s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(45){left:55.2%!important;right:auto!important;top:37.5%!important;background-position:100% 0;animation-duration:22s;animation-delay:-119.372s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(46){left:68.5%!important;right:auto!important;top:37.5%!important;background-position:0% 0;animation-duration:24s;animation-delay:-122.08500000000001s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(47){left:81.80000000000001%!important;right:auto!important;top:37.5%!important;background-position:25% 0;animation-duration:26s;animation-delay:-124.798s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(48){left:95.10000000000001%!important;right:auto!important;top:37.5%!important;background-position:50% 0;animation-duration:28s;animation-delay:-127.51100000000001s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(49){left:2%!important;right:auto!important;top:44.400000000000006%!important;background-position:75% 0;animation-duration:18s;animation-delay:-130.224s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(50){left:15.3%!important;right:auto!important;top:44.400000000000006%!important;background-position:100% 0;animation-duration:20s;animation-delay:-132.937s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(51){left:28.6%!important;right:auto!important;top:44.400000000000006%!important;background-position:0% 0;animation-duration:22s;animation-delay:-135.65s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(52){left:41.900000000000006%!important;right:auto!important;top:44.400000000000006%!important;background-position:25% 0;animation-duration:24s;animation-delay:-138.363s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(53){left:55.2%!important;right:auto!important;top:44.400000000000006%!important;background-position:50% 0;animation-duration:26s;animation-delay:-141.076s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(54){left:68.5%!important;right:auto!important;top:44.400000000000006%!important;background-position:75% 0;animation-duration:28s;animation-delay:-143.78900000000002s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(55){left:81.80000000000001%!important;right:auto!important;top:44.400000000000006%!important;background-position:100% 0;animation-duration:18s;animation-delay:-146.502s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(56){left:95.10000000000001%!important;right:auto!important;top:44.400000000000006%!important;background-position:0% 0;animation-duration:20s;animation-delay:-149.215s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(57){left:2%!important;right:auto!important;top:51.300000000000004%!important;background-position:25% 0;animation-duration:22s;animation-delay:-151.928s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(58){left:15.3%!important;right:auto!important;top:51.300000000000004%!important;background-position:50% 0;animation-duration:24s;animation-delay:-154.641s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(59){left:28.6%!important;right:auto!important;top:51.300000000000004%!important;background-position:75% 0;animation-duration:26s;animation-delay:-157.354s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(60){left:41.900000000000006%!important;right:auto!important;top:51.300000000000004%!important;background-position:100% 0;animation-duration:28s;animation-delay:-160.067s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(61){left:55.2%!important;right:auto!important;top:51.300000000000004%!important;background-position:0% 0;animation-duration:18s;animation-delay:-162.78s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(62){left:68.5%!important;right:auto!important;top:51.300000000000004%!important;background-position:25% 0;animation-duration:20s;animation-delay:-165.493s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(63){left:81.80000000000001%!important;right:auto!important;top:51.300000000000004%!important;background-position:50% 0;animation-duration:22s;animation-delay:-168.20600000000002s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(64){left:95.10000000000001%!important;right:auto!important;top:51.300000000000004%!important;background-position:75% 0;animation-duration:24s;animation-delay:-170.919s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(65){left:2%!important;right:auto!important;top:58.2%!important;background-position:100% 0;animation-duration:26s;animation-delay:-173.632s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(66){left:15.3%!important;right:auto!important;top:58.2%!important;background-position:0% 0;animation-duration:28s;animation-delay:-176.345s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(67){left:28.6%!important;right:auto!important;top:58.2%!important;background-position:25% 0;animation-duration:18s;animation-delay:-179.058s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(68){left:41.900000000000006%!important;right:auto!important;top:58.2%!important;background-position:50% 0;animation-duration:20s;animation-delay:-181.77100000000002s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(69){left:55.2%!important;right:auto!important;top:58.2%!important;background-position:75% 0;animation-duration:22s;animation-delay:-184.484s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(70){left:68.5%!important;right:auto!important;top:58.2%!important;background-position:100% 0;animation-duration:24s;animation-delay:-187.197s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(71){left:81.80000000000001%!important;right:auto!important;top:58.2%!important;background-position:0% 0;animation-duration:26s;animation-delay:-189.91s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(72){left:95.10000000000001%!important;right:auto!important;top:58.2%!important;background-position:25% 0;animation-duration:28s;animation-delay:-192.62300000000002s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(73){left:2%!important;right:auto!important;top:65.1%!important;background-position:50% 0;animation-duration:18s;animation-delay:-195.336s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(74){left:15.3%!important;right:auto!important;top:65.1%!important;background-position:75% 0;animation-duration:20s;animation-delay:-198.049s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(75){left:28.6%!important;right:auto!important;top:65.1%!important;background-position:100% 0;animation-duration:22s;animation-delay:-200.762s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(76){left:41.900000000000006%!important;right:auto!important;top:65.1%!important;background-position:0% 0;animation-duration:24s;animation-delay:-203.475s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(77){left:55.2%!important;right:auto!important;top:65.1%!important;background-position:25% 0;animation-duration:26s;animation-delay:-206.18800000000002s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(78){left:68.5%!important;right:auto!important;top:65.1%!important;background-position:50% 0;animation-duration:28s;animation-delay:-208.901s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(79){left:81.80000000000001%!important;right:auto!important;top:65.1%!important;background-position:75% 0;animation-duration:18s;animation-delay:-211.614s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(80){left:95.10000000000001%!important;right:auto!important;top:65.1%!important;background-position:100% 0;animation-duration:20s;animation-delay:-214.327s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(81){left:2%!important;right:auto!important;top:72%!important;background-position:0% 0;animation-duration:22s;animation-delay:-217.04000000000002s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(82){left:15.3%!important;right:auto!important;top:72%!important;background-position:25% 0;animation-duration:24s;animation-delay:-219.75300000000001s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(83){left:28.6%!important;right:auto!important;top:72%!important;background-position:50% 0;animation-duration:26s;animation-delay:-222.466s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(84){left:41.900000000000006%!important;right:auto!important;top:72%!important;background-position:75% 0;animation-duration:28s;animation-delay:-225.179s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(85){left:55.2%!important;right:auto!important;top:72%!important;background-position:100% 0;animation-duration:18s;animation-delay:-227.892s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(86){left:68.5%!important;right:auto!important;top:72%!important;background-position:0% 0;animation-duration:20s;animation-delay:-230.60500000000002s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(87){left:81.80000000000001%!important;right:auto!important;top:72%!important;background-position:25% 0;animation-duration:22s;animation-delay:-233.318s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(88){left:95.10000000000001%!important;right:auto!important;top:72%!important;background-position:50% 0;animation-duration:24s;animation-delay:-236.031s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(89){left:2%!important;right:auto!important;top:78.9%!important;background-position:75% 0;animation-duration:26s;animation-delay:-238.744s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(90){left:15.3%!important;right:auto!important;top:78.9%!important;background-position:100% 0;animation-duration:28s;animation-delay:-241.457s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(91){left:28.6%!important;right:auto!important;top:78.9%!important;background-position:0% 0;animation-duration:18s;animation-delay:-244.17000000000002s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(92){left:41.900000000000006%!important;right:auto!important;top:78.9%!important;background-position:25% 0;animation-duration:20s;animation-delay:-246.883s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(93){left:55.2%!important;right:auto!important;top:78.9%!important;background-position:50% 0;animation-duration:22s;animation-delay:-249.596s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(94){left:68.5%!important;right:auto!important;top:78.9%!important;background-position:75% 0;animation-duration:24s;animation-delay:-252.309s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(95){left:81.80000000000001%!important;right:auto!important;top:78.9%!important;background-position:100% 0;animation-duration:26s;animation-delay:-255.02200000000002s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(96){left:95.10000000000001%!important;right:auto!important;top:78.9%!important;background-position:0% 0;animation-duration:28s;animation-delay:-257.735s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(97){left:2%!important;right:auto!important;top:85.80000000000001%!important;background-position:25% 0;animation-duration:18s;animation-delay:-260.448s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(98){left:15.3%!important;right:auto!important;top:85.80000000000001%!important;background-position:50% 0;animation-duration:20s;animation-delay:-263.161s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(99){left:28.6%!important;right:auto!important;top:85.80000000000001%!important;background-position:75% 0;animation-duration:22s;animation-delay:-265.874s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(100){left:41.900000000000006%!important;right:auto!important;top:85.80000000000001%!important;background-position:100% 0;animation-duration:24s;animation-delay:-268.587s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(101){left:55.2%!important;right:auto!important;top:85.80000000000001%!important;background-position:0% 0;animation-duration:26s;animation-delay:-271.3s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(102){left:68.5%!important;right:auto!important;top:85.80000000000001%!important;background-position:25% 0;animation-duration:28s;animation-delay:-274.01300000000003s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(103){left:81.80000000000001%!important;right:auto!important;top:85.80000000000001%!important;background-position:50% 0;animation-duration:18s;animation-delay:-276.726s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(104){left:95.10000000000001%!important;right:auto!important;top:85.80000000000001%!important;background-position:75% 0;animation-duration:20s;animation-delay:-279.439s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(105){left:2%!important;right:auto!important;top:92.7%!important;background-position:100% 0;animation-duration:22s;animation-delay:-282.152s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(106){left:15.3%!important;right:auto!important;top:92.7%!important;background-position:0% 0;animation-duration:24s;animation-delay:-284.865s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(107){left:28.6%!important;right:auto!important;top:92.7%!important;background-position:25% 0;animation-duration:26s;animation-delay:-287.57800000000003s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(108){left:41.900000000000006%!important;right:auto!important;top:92.7%!important;background-position:50% 0;animation-duration:28s;animation-delay:-290.291s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(109){left:55.2%!important;right:auto!important;top:92.7%!important;background-position:75% 0;animation-duration:18s;animation-delay:-293.004s;animation-direction:reverse}
+.cia-freyja .cia-runas i:nth-child(110){left:68.5%!important;right:auto!important;top:92.7%!important;background-position:100% 0;animation-duration:20s;animation-delay:-295.717s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(111){left:81.80000000000001%!important;right:auto!important;top:92.7%!important;background-position:0% 0;animation-duration:22s;animation-delay:-298.43s;animation-direction:normal}
+.cia-freyja .cia-runas i:nth-child(112){left:95.10000000000001%!important;right:auto!important;top:92.7%!important;background-position:25% 0;animation-duration:24s;animation-delay:-301.14300000000003s;animation-direction:reverse}
+@media(max-width:450px){.cia-freyja .cia-runas i{width:21px;height:40px}
+}
+@media(prefers-reduced-motion:reduce){.cia-freyja .cia-runas i{animation:none;opacity:.25;transform:none}
+}
+@keyframes cia-escrita{0%{opacity:0;transform:translate(0,85px)}15%{opacity:.55}50%{opacity:.7}85%{opacity:.4}100%{opacity:0;transform:translate(5px,-115px)}}
+.cia-freyja h2{font-family:'Palatino Linotype','Book Antiqua',Palatino,serif;font-size:32px;letter-spacing:3px;font-weight:normal;line-height:1.4;text-shadow:0 1px 12px #c28f3933}
+.cia-freyja header p{font-family:'Baskerville','Times New Roman',serif;font-size:17px;line-height:1.8;letter-spacing:.3px;font-style:italic;max-width:420px;margin:15px auto 0}
+.cia-freyja header:after{display:none}
+.cia-freyja .cia-separador{display:flex;align-items:center;justify-content:center;gap:16px;max-width:340px;margin:28px auto 0;color:var(--ouro);height:24px;opacity:.8}
+.cia-freyja .cia-separador:before,.cia-freyja .cia-separador:after{content:'';height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--ouro))}
+.cia-freyja .cia-separador:after{background:linear-gradient(90deg,var(--ouro),transparent)}
+.cia-freyja .cia-separador span{display:block;width:11px;height:11px;border:1px solid var(--ouro);transform:rotate(45deg);box-shadow:0 0 10px #b88b3933;position:relative}
+.cia-freyja .cia-separador span:after{content:'';position:absolute;inset:3px;background:var(--ouro)}
+@media(max-width:450px){.cia-freyja h2{font-size:27px;letter-spacing:2px}
+.cia-freyja header p{font-size:16px}
+.cia-freyja .cia-separador{max-width:230px}
+}
+@media(prefers-reduced-motion:reduce){.cia-freyja .cia-runas i{animation:none}
+}
+.cia-freyja h2{font-family:'Berkshire Swash','Palatino Linotype',serif;font-size:36px;font-weight:400;letter-spacing:.5px;line-height:1.45}
+.cia-freyja header p{font-family:'Pinyon Script','Baskerville',cursive;font-size:27px;font-weight:400;font-style:normal;letter-spacing:.15px;line-height:1.5;max-width:440px;margin:14px auto 0;color:#cfbca8}
+@media(max-width:450px){.cia-freyja h2{font-size:30px}
+.cia-freyja header p{font-size:24px;line-height:1.5}
+}
+.cia-freyja h2{font-family:'IM Fell English','Palatino Linotype',serif;font-size:36px;font-style:italic;font-weight:400;letter-spacing:.7px;line-height:1.4}
+.cia-freyja header p{font-family:'Pinyon Script',cursive;font-size:22px;line-height:1.55;margin-top:12px}
+@media(max-width:450px){.cia-freyja h2{font-size:30px}
+.cia-freyja header p{font-size:20px}
+}
+.cia-freyja h2{font-family:'Playwrite TZ',cursive;font-weight:400;font-style:normal;font-size:32px;letter-spacing:0;line-height:1.8}
+@media(max-width:450px){.cia-freyja h2{font-size:27px}
+}
+.cia-freyja h2{overflow-wrap:normal;word-break:normal;text-wrap:balance;font-size:30px;line-height:1.85}
+@media(max-width:450px){.cia-freyja h2{font-size:25px}
+}
+.cia-freyja{--titulo:#d9b77b;--subtitulo:#cfbca8;--outros:#b1bacd}
+.cia-freyja h2{color:var(--titulo)}
+.cia-freyja header p{color:var(--subtitulo)}
+.cia-freyja .cia-narrativa b{color:var(--fala);font-weight:normal}
+.cia-freyja .cia-narrativa i{color:var(--pensamento);font-style:italic}
+.cia-freyja .cia-narrativa d{display:inline;color:var(--outros)}
+.cia-freyja a.cia-creditos{text-decoration:none}
+.cia-freyja a.cia-creditos:hover,.cia-freyja a.cia-creditos:focus-visible{opacity:1;text-decoration:underline}
