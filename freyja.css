@@ -308,3 +308,9 @@
 .cia-freyja .cia-narrativa d{display:inline;color:var(--outros)}
 .cia-freyja a.cia-creditos{text-decoration:none}
 .cia-freyja a.cia-creditos:hover,.cia-freyja a.cia-creditos:focus-visible{opacity:1;text-decoration:underline}
+
+/* Fundo animado único, sem elementos decorativos no HTML. */
+.cia-freyja{background-color:#100d10;background-image:url('https://i.imgur.com/QL1WX2e.gif');background-size:100% auto;background-repeat:repeat-y}
+.cia-freyja .cia-runas{display:none!important}
+@media(prefers-reduced-motion:reduce){.cia-freyja{background-image:none}}
+
