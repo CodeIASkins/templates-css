@@ -314,3 +314,43 @@
 .cia-freyja .cia-runas{display:none!important}
 @media(prefers-reduced-motion:reduce){.cia-freyja{background-image:none}}
 
+
+/* Moldura contínua ilustrada. */
+.cia-freyja{overflow:visible;margin:90px auto;max-width:620px;border:0;outline:none;box-shadow:0 12px 35px #0009;width:calc(100% - 55px)}
+.cia-freyja .cia-moldura{position:absolute;inset:-16px;pointer-events:none;z-index:3}
+.cia-moldura .cia-trama{position:absolute;background-repeat:repeat;}
+.cia-moldura .cia-trama-topo,.cia-moldura .cia-trama-base{left:0;right:0;height:34px;background-image:url('trama.png');background-size:210px 102px;background-position:center}
+.cia-moldura .cia-trama-topo{top:0}.cia-moldura .cia-trama-base{bottom:0}
+.cia-moldura .cia-trama-esq,.cia-moldura .cia-trama-dir{top:0;bottom:0;width:34px;background-image:url('trama-vertical.svg');background-size:102px 210px;background-position:center}
+.cia-moldura .cia-trama-esq{left:0}.cia-moldura .cia-trama-dir{right:0}
+.cia-moldura .cia-canto{position:absolute;width:210px;height:210px;object-fit:contain;top:-40px;filter:drop-shadow(0 3px 4px #0008)}
+.cia-moldura .cia-canto-esq{left:-26px}.cia-moldura .cia-canto-dir{right:-26px;transform:scaleX(-1)}
+.cia-freyja header{padding-top:80px;padding-left:17%;padding-right:17%}.cia-freyja .cia-narrativa{padding-left:13%;padding-right:13%;padding-bottom:45px}.cia-freyja .cia-creditos{padding-bottom:40px}
+@media(max-width:450px){.cia-moldura .cia-canto{width:150px;height:150px;top:-28px}.cia-moldura .cia-canto-esq{left:-18px}.cia-moldura .cia-canto-dir{right:-18px}.cia-freyja header{padding-top:66px}.cia-freyja{width:calc(100% - 42px)}}
+
+/* Continuação das faixas da própria imagem dos gatos. */
+.cia-moldura .cia-trama-topo,.cia-moldura .cia-trama-base{height:15px;background-image:url('trama-gato-horizontal.svg');background-size:150px 15px;background-repeat:repeat-x}
+.cia-moldura .cia-trama-esq,.cia-moldura .cia-trama-dir{width:15px;background-image:url('trama-gato-vertical.svg');background-size:15px 127px;background-repeat:repeat-y}
+.cia-moldura .cia-canto{width:245px;height:245px;top:-47px}
+.cia-moldura .cia-canto-esq{left:-34px}.cia-moldura .cia-canto-dir{right:-34px}
+.cia-moldura .cia-trama-base{transform:scaleY(-1)}.cia-moldura .cia-trama-dir{transform:scaleX(-1)}
+@media(max-width:450px){.cia-moldura .cia-canto{width:180px;height:180px;top:-34px}.cia-moldura .cia-canto-esq{left:-24px}.cia-moldura .cia-canto-dir{right:-24px}}
+
+/* Emendas alinhadas, com transição gradual dos cantos para as faixas. */
+.cia-moldura .cia-trama-topo,.cia-moldura .cia-trama-base{height:14px;background-size:280px 14px;left:5px;right:5px}
+.cia-moldura .cia-trama-esq,.cia-moldura .cia-trama-dir{width:14px;background-size:14px 236px;top:5px;bottom:5px}
+.cia-moldura .cia-canto{filter:drop-shadow(0 2px 2px #0005);mask-image:linear-gradient(to right,#000 0%,#000 68%,transparent 100%),linear-gradient(to bottom,#000 0%,#000 68%,transparent 100%);mask-composite:intersect;-webkit-mask-image:linear-gradient(to right,#000 0%,#000 68%,transparent 100%),linear-gradient(to bottom,#000 0%,#000 68%,transparent 100%);-webkit-mask-composite:source-in}
+.cia-moldura:before,.cia-moldura:after{content:'';position:absolute;bottom:0;width:14px;height:14px;background:linear-gradient(135deg,#b58d4f,#634623 38%,#c9a86a 49%,#51371e 62%,#b58d4f);box-shadow:inset 0 0 0 1px #bd975b,inset 0 0 0 3px #533a24;z-index:2}
+.cia-moldura:before{left:0}.cia-moldura:after{right:0;transform:scaleX(-1)}
+@media(max-width:450px){.cia-moldura .cia-canto{width:210px;height:210px;top:-40px}.cia-moldura .cia-canto-esq{left:-29px}.cia-moldura .cia-canto-dir{right:-29px}}
+
+/* Gatos em diagonal: superior esquerdo e inferior direito invertido. */
+.cia-moldura .cia-canto-dir{top:auto;bottom:-47px;right:-34px;transform:rotate(180deg)}
+.cia-moldura:after{display:none}
+@media(max-width:450px){.cia-moldura .cia-canto-dir{top:auto;bottom:-40px;right:-29px}}
+
+/* Junção superior direita sem gato: mesmo acabamento metálico do canto oposto. */
+.cia-moldura:after{display:block;top:0;bottom:auto;right:0;width:14px;height:14px;transform:rotate(90deg);background:linear-gradient(135deg,#b58d4f,#634623 38%,#c9a86a 49%,#51371e 62%,#b58d4f);box-shadow:inset 0 0 0 1px #bd975b,inset 0 0 0 3px #533a24;z-index:4}
+
+/* Filigrana vazada no encontro superior direito. */
+.cia-moldura:after{top:-5px;right:-5px;bottom:auto;width:44px;height:44px;transform:none;background:transparent url('canto-delicado.svg') center/contain no-repeat;box-shadow:none;border:0;z-index:4}
