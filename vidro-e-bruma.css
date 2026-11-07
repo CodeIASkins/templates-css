@@ -1,0 +1,23 @@
+.cia-vidro-bruma { container-type:inline-size;position:relative;isolation:isolate;overflow:hidden;box-sizing:border-box;width:100%;max-width:570px;margin:24px auto;background:var(--fundo) var(--vb-nevoa) center/100% 100% no-repeat;color:var(--texto);font:16px/1.72 Georgia,serif;text-align:left;overflow-wrap:anywhere; }
+.cia-vidro-bruma .cia-vb-2 { position:absolute;inset:0 0 auto;height:clamp(210px,58vw,330px);z-index:-1;opacity:calc(var(--maos) * 1);transform:none;background:linear-gradient(180deg,#0009 0%,transparent 23%,transparent 60%,#000 100%),var(--vb-maos-original) center top/cover no-repeat;mix-blend-mode:screen;filter:grayscale(1) sepia(.16) hue-rotate(95deg); }
+.cia-vidro-bruma .cia-vb-3 { position:absolute;inset:clamp(150px,43vw,245px) 0 clamp(145px,41vw,230px);mask-image:linear-gradient(transparent,#000 100px,#000 calc(100% - 100px),transparent);z-index:-1;opacity:calc(var(--maos) * .8);transform:scaleX(-1);mix-blend-mode:screen; }
+.cia-vidro-bruma .cia-vb-4 { position:absolute;inset:0;background:linear-gradient(90deg,transparent 0%,#000d 26%,#000e 74%,transparent 100%),var(--vb-maos-ref) center top/100% auto repeat-y;filter:grayscale(1) sepia(.16) hue-rotate(95deg);mask-image:repeating-linear-gradient(to bottom,transparent 0,#000 7cqw,#000 46.815cqw,transparent 53.815cqw); }
+.cia-vidro-bruma .cia-vb-5 { position:absolute;inset:auto 0 0;height:clamp(200px,55vw,310px);z-index:-1;opacity:calc(var(--maos) * .7);transform:none;background:linear-gradient(90deg,transparent 0%,#000b 29%,#000d 72%,transparent 100%),linear-gradient(180deg,#000 0%,transparent 26%,transparent 62%,#000 100%),var(--vb-maos-ref) center top/cover no-repeat;mix-blend-mode:screen;filter:grayscale(1) sepia(.16) hue-rotate(95deg); }
+.cia-vidro-bruma .cia-vb-6 { padding:26px 10% 0; }
+.cia-vidro-bruma .cia-vb-7 { padding:clamp(110px,31vw,195px) 0 18px;text-align:center;text-shadow:0 2px 12px #000,0 0 8px #000; }
+.cia-vidro-bruma .cia-vb-8 { color:var(--acento);font:400 clamp(18px,4.4vw,31px)/1.15 Redaction 35,Georgia,serif;letter-spacing:.05em; }
+.cia-vidro-bruma .cia-vb-9 { font-size:clamp(38px,10vw,82px);line-height:1;letter-spacing:-.035em;font-family:Redaction 35,Georgia,serif; }
+.cia-vidro-bruma .cia-vb-10 { margin:clamp(18px,4vw,28px) 0 0 auto;max-width:85%;color:var(--acento);font:400 clamp(23px,5vw,33px)/1.05 Zeyada,cursive;text-align:right; }
+.cia-vidro-bruma .cia-vb-11 { padding:0 11% 16px;text-shadow:0 1px 6px #000; }
+.cia-vidro-bruma .cia-vb-12 { display:block;margin:0 auto 10px; }
+.cia-vidro-bruma .cia-vb-13 { margin:0 0 1em; }
+.cia-vidro-bruma .cia-vb-14 { float:left;font-size:54px;line-height:.88;margin:5px 8px 0 0;color:var(--acento); }
+.cia-vidro-bruma .cia-vb-15 { margin:0 0 1em; }
+.cia-vidro-bruma .cia-vb-16 { margin:0 0 1em;color:var(--fala); }
+.cia-vidro-bruma .cia-vb-17 { margin:0 0 1em;color:var(--pensamento); }
+.cia-vidro-bruma .cia-vb-18 { margin:0 0 1em; }
+.cia-vidro-bruma .cia-vb-19 { margin:0;color:var(--outros); }
+.cia-vidro-bruma .cia-vb-20 { padding:0 10% 29px;text-align:center; }
+.cia-vidro-bruma .cia-vb-21 { display:block;margin:0 auto 8px; }
+.cia-vidro-bruma .cia-vb-22 { display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;color:var(--acento);font:700 10px/1.5 Arial,sans-serif;letter-spacing:1.3px;text-transform:uppercase; }
+.cia-vidro-bruma .cia-vb-23 { margin-top:13px;color:var(--acento);font:10px/1.5 Arial,sans-serif;letter-spacing:4px; }
